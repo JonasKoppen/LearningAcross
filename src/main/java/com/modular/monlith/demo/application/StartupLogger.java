@@ -1,0 +1,21 @@
+package com.modular.monlith.demo.application;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+
+@Component
+@Slf4j
+@RequiredArgsConstructor
+public class StartupLogger {
+
+    private final ApplicationProperties applicationProperties;
+
+    @Bean
+    public void dummyBeam(){
+        LOG.info("Your application key is: {}", applicationProperties.getApplicationKey());
+        return;
+    }
+}

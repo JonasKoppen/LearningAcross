@@ -1,0 +1,21 @@
+across:
+  development:
+    active: true
+
+applicationInfo:
+  buildDate: "2020-07-15 19:03:10"
+
+server:
+  error:
+    includeStacktrace: ALWAYS
+  port: 8080
+
+spring:
+  datasource:
+    url: "jdbc:h2:./local-data/db/demo-db"
+    username: sa
+
+applicationKey: 'DEV:487FEF7E8F7E8F7E8'
+
+
+
